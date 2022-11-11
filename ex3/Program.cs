@@ -11,7 +11,7 @@ int[] GetArray(int size, int minValue, int maxValue)
 }
 void FindNumber(int[] array, int N)
 {
-    for (int i = 0; i < array; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         if (array[i] == N)
         {
@@ -24,6 +24,6 @@ void FindNumber(int[] array, int N)
     Console.WriteLine("НЕТ");
 }
 int[] array = GetArray(5, -9, 9);
-FindNumber(array,N);
-int N=int.Parse(Console.Readline()!);
+FindNumber(array,n);
+int n=int.Parse(Console.Readline()!);
  Console.WriteLine(String.Join(" ",array));
