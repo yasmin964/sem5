@@ -9,16 +9,17 @@ int[] GetArray(int size,int minValue,int maxValue)
  
  }
  void CountNumbers(int [] array)
- {
-    int count=0;
+ {int count=0;
+    
     for (int i = 0; i < array.Length;i++)
     { 
-        if(array[i]%2=0)
+        if( array [i] %2==0)
         {
+            
             count+=1;
         }
-    } Console.WriteLine($"количество четных чисел{count}");
+    } Console.WriteLine($"количество четных чисел {count}");
  }
 int[] array=GetArray(10,100,1000);
  Console.WriteLine(String.Join(" ",array));
- СountNumbers(array);
+ CountNumbers(array);
