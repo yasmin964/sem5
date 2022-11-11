@@ -8,14 +8,15 @@ int[] GetArray(int size,int minValue,int maxValue)
     return res;
  
  }
-void GetSum(int [] array)
+ void GetSum(int [] array)
 {
+    int res=0;
     for (int i = 0; i < array.Length;i++)
     {
         if (i%2!=0)
         {
-            int res=0;
-            int res= res+array[i];
+            
+            res= res+array[i];
 
 
         }
@@ -26,4 +27,4 @@ void GetSum(int [] array)
 }
 int[] array=GetArray(10,-9,9);
  Console.WriteLine(String.Join(" ",array));
- CountNumbers(array);
+GetSum(array);
